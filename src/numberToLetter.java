@@ -42,6 +42,5 @@ public class numberToLetter {
                     System.out.println(soThanhChu[hangTram]+" tram "+soThanhChu[hangChuc]+" "+soThanhChu[hangDonVi]);
             }
         }
-
     }
 }
