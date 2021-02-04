@@ -34,24 +34,13 @@ public class numberToLetter {
             int hangTram = so / 100;
             int hangChuc = (so % 100)/10;
             int hangDonVi = (so % 100)%10;
-            if (hangTram == 1) {
-                if (hangChuc == 0 & hangDonVi == 0) {
-                    System.out.print("Mot tram ");
-                } else if (hangChuc == 0 & hangDonVi != 0) {
-                    System.out.println("Mot tram linh "+soThanhChu[hangDonVi]);
-                } else {
-                    System.out.println("Mot tram "+soThanhChu[hangChuc]+" "+soThanhChu[hangDonVi]);
-                }
-            } else {
-                if (hangChuc == 0 & hangDonVi == 0) {
+            if (hangChuc == 0 & hangDonVi == 0) {
                     System.out.println(soThanhChu[hangTram] + " tram");
                 } else if (hangChuc == 0 & hangDonVi != 0) {
-                    System.out.println(soThanhChu[hangTram]+" linh "+soThanhChu[hangDonVi]);
+                    System.out.println(soThanhChu[hangTram]+" tram linh "+soThanhChu[hangDonVi]);
                 } else {
                     System.out.println(soThanhChu[hangTram]+" tram "+soThanhChu[hangChuc]+" "+soThanhChu[hangDonVi]);
-                }
             }
-
         }
 
     }
